@@ -1,0 +1,13 @@
+html {
+    font-size: 62.5%;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    font-size: 3em;
+}
+
+.navbar__item {
+    justify-content: center;
+}
