@@ -92,3 +92,38 @@
 }
 
 
+
+.service {
+    color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    transition: 0.25s;
+}
+.service:hover {
+    color: var(--deep-sky-blue);
+    text-decoration: none;
+    transition: 0.25s;
+}
+
+.service-img {
+    display: block;
+    text-decoration: none;    
+    height: 250px;
+    width: 250px;
+    filter: drop-shadow(2px 2px 4px var(--dark-grey));
+    -webkit-filter: drop-shadow(2px 2px 4px var(--dark-grey));
+    transition: 0.25s;
+}
+.service-img:hover {
+    -webkit-filter: drop-shadow(4px 4px 8px var(--dark-grey));
+    filter: drop-shadow(4px 4px 8px var(--dark-grey));
+    transition: 0.25s;
+}   
+
+.service-text {
+    font-size: 20px;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+  }
+
