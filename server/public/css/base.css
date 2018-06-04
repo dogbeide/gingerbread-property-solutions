@@ -11,30 +11,18 @@ body {
     font-family: 'Trebuchet MS';
 }
 
-.container {
-    width: calc(100% - 100px);
-    background-color: var(--white-smoke);
+.opacity-6 {
+    opacity: 0.6;
+}
+.opacity-8 {
+    opacity: 0.8;
+}
+.opacity-9 {
+    opacity: 0.9;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .container {
-        width: calc(100% - 25px);
+        width: 100%;
     }
-}
-.subtitle-1 {
-    color: var(--dark-grey);
-    display: block;
-    font-size: 2em;
-    font-weight: 600;
-}
-
-.subtitle-2 {
-    color: var(--dark-grey);
-    display: block;
-    font-size: 1.5em;
-}
-
-.text {
-    display: block;
-    font-size: 1em;
 }

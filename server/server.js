@@ -22,7 +22,6 @@ app.use(express.static(__dirname + '/public')); // serve static content
 app.use(express.static(__dirname + '/media')); // serve images
 
 app.use(logger('dev')); // log all http requests
-// app.use(fooMiddleware); // custom middleware
 
 app.get('/', (req, res) => {
     res.render('index', {
