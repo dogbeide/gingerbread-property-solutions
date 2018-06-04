@@ -118,12 +118,40 @@
     -webkit-filter: drop-shadow(4px 4px 8px var(--dark-grey));
     filter: drop-shadow(4px 4px 8px var(--dark-grey));
     transition: 0.25s;
-}   
-
+}
 .service-text {
     font-size: 20px;
     overflow: hidden;
     text-align: center;
     display: block;
-  }
+}
+
+.people {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.person {
+    color: var(--dark-grey);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.person-img {
+    display: block;
+    text-decoration: none;    
+    filter: drop-shadow(2px 2px 4px var(--dark-grey));
+    -webkit-filter: drop-shadow(2px 2px 4px var(--dark-grey));
+    transition: 0.25s;
+    width
+}
+
+.person-text {
+    font-size: 20px;
+    overflow: hidden;
+    text-align: center;
+    display: block;
+}
 

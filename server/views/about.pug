@@ -1,1 +1,51 @@
 extends ./layouts/base.pug
+
+block content
+    .content
+        .container
+            .subtitle-3.bg-grad-blue.center
+                span WHO WE ARE
+            .bg-white-smoke
+                .text-2
+                .people
+                    .person
+                        .service-text Elizabeth
+                        img.person-img(src="/images/elizabeth.jpg")
+                    .person
+                        .service-text Aishah
+                        img.person-img(src="/images/aishah.jpg")
+                .text-2
+            .subtitle-3.bg-grad-blue-2.center
+                span OUR STORY
+            .bg-white-smoke.center
+                .text-2.
+                    We are the Co-Directors of a London based specialist 
+                    management company - Gingerbread Property Solutions Limited 
+                    - a fully compliant business; we are members of the National 
+                    Landlords Association, the Property Redress Scheme and have 
+                    Professional Indemnity Insurance, so working with us means 
+                    that landlord’s portfolios are protected by knowledgeable 
+                    property professionals.
+                hr.fancy-hr.opacity-6
+                .text-2.
+                    In the past two years, we have been working with 
+                    investors and landlords managing their properties. 
+                    We offer landlords a guaranteed rent and fully managed 
+                    professional HMO service. Due to high demand from our 
+                    professional tenants we are looking to rent whole 
+                    properties in your  area on a business lease. 
+                    Our intention is to build a profitable business. 
+                    It is not within our interest to cut you out of a 
+                    deal as you have a vast amount of properties and 
+                    I want to help you rent them. 
+                hr.fancy-hr.opacity-6
+                .text-2.
+                    We believe in operating with complete transparency 
+                    and to that end we add letting agents onto the 
+                    management contract as well as the landlord, 
+                    which outlines everyone’s responsibilities, 
+                    and legally protects all parties.
+                    So, to summarise other important features about our 
+                    professional service offers:
+                .text-2
+            include ./includes/service-links.pug
