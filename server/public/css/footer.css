@@ -1,3 +1,39 @@
 .footer {
-    background-color: var(--dark-slate-grey);
+    background-color: var(--dark-grey);
+    border-top: 3px solid var(--white-smoke);
+    color: var(--white-smoke);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 1.5em;
+    height: 100%;
+    width: 100%;
+}
+
+.footer * {
+    text-align: center;
+    font-size: 0.8em;
+
+}
+.footer-nav-items {
+    display: table;
+    align-items: center;
+    height: 100%;
+    padding: 2em 0;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
+
+#copyright {
+    font-weight: 100;
+}
+
+#privacy-policy, #terms-and-conditions {
+    /* font-weight: 600; */
+}
+
+.contact {
+    color: var(--deep-sky-blue);
+    font-weight: 300;
 }

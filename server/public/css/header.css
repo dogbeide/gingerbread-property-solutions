@@ -74,10 +74,6 @@
     text-decoration: none;
 }
 
-.nav-items .icon {
-    display: none;
-}
-
 @media screen and (max-width: 600px) {
     /* .nav-items {display: none;} */
     .nav-item-divider {display: none;}

@@ -3,10 +3,38 @@
     --dark-orange-rgb: 247, 134, 32;
     --deep-sky-blue: #09afe9;
     --deep-sky-blue-rgb: 9, 175, 233;
-    --dark-slate-grey: #444444;
+    --dark-grey: #333333;
     --white-smoke: #f2f2f2;
 }
 
 body {
     font-family: 'Trebuchet MS';
+}
+
+.container {
+    width: calc(100% - 100px);
+    background-color: var(--white-smoke);
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        width: calc(100% - 25px);
+    }
+}
+.subtitle-1 {
+    color: var(--dark-grey);
+    display: block;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.subtitle-2 {
+    color: var(--dark-grey);
+    display: block;
+    font-size: 1.5em;
+}
+
+.text {
+    display: block;
+    font-size: 1em;
 }
