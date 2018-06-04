@@ -1,0 +1,5 @@
+.content {
+    background-image: url("/images/content-bg-full.png");
+    background-size: cover;
+    height: 100%;
+}
