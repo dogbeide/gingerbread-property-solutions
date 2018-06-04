@@ -17,8 +17,13 @@
     padding-right: 2em;
     padding-top: 1em;
     position: relative;
+    transition: 0.25s;
     width: 210px;
     z-index: 2;
+}
+.header__brand:hover {
+    background: rgba(var(--deep-sky-blue-rgb), 0.4);
+    transition: 0.25s;
 }
 
 .header__nav {
@@ -56,11 +61,13 @@
     padding-left: 0.3em;
     padding-right: 0.3em;
     text-decoration: none;
+    transition: 0.25s;
 }
 .nav-item:hover {
     background: rgba(var(--deep-sky-blue-rgb), 0.1);
     color: var(--white-smoke);
     text-decoration: none;
+    transition: 0.25s;
 }
 
 .nav-item-divider {
