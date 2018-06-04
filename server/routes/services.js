@@ -4,7 +4,9 @@ import { company } from '../utils/constants'
 const services = express.Router();
 
 services.get('/', (req, res) => {
-    res.render('services', {company})
+    res.render('services', {
+        title: `${company} | Services`
+    })
 });
 
 // services.use('/service1', require('./services/service1));

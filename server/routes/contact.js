@@ -10,7 +10,9 @@ const router = express.Router();
 // });
 
 router.get('/', (req, res) => {
-    res.render('contact', {company})
+    res.render('contact', {
+        title: `${company} | Contact`
+    })
 });
 
 router.post('/', (req, res) => {

@@ -1,0 +1,18 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no")
+        title #{title}
+
+        link(rel="stylesheet" href="/css/styles.css")
+
+        link(rel="shortcut icon" href="/images/favicon.ico")
+        link(rel="icon" type="image/png" href="/images/android-icon-192x192.png" sizes="192x192")
+        link(rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png")
+    body
+        include ../includes/header.pug
+        block content
+        script(src="/js/jquery-3.3.1.min.js")
+        script(src="/js/bootstrap.js")
+

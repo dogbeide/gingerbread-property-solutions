@@ -1,1 +1,1 @@
-export const company = 'Gingerbread Property solutions';
+export const company = 'Gingerbread Property Solutions';
