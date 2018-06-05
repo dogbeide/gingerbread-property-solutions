@@ -35,7 +35,6 @@ app.get('/about', (req, res) => {
 });
 app.use('/contact', contact);
 app.use('/services', services);
-app.use('/portfolio', portfolio);
 app.get('/privacy-policy', (req, res) => {
     res.render('privacy-policy', {
         title: `${company} | Privacy Policy`
