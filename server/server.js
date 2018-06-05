@@ -50,7 +50,10 @@ app.get('/news', (req, res) => {
     res.render('news', {
         title: `${company} | News`
     })
-})
+});
+app.get('*', (req, res) => {
+    res.render('error404');
+});
 
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
