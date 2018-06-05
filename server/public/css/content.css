@@ -106,11 +106,12 @@
 
 .service-img {
     display: block;
-    text-decoration: none;    
+    margin: auto;
     height: 250px;
     width: 250px;
     filter: drop-shadow(2px 2px 4px var(--dark-grey));
     -webkit-filter: drop-shadow(2px 2px 4px var(--dark-grey));
+    text-decoration: none;    
     transition: 0.25s;
 }
 .service-img:hover {
@@ -123,6 +124,7 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    min-height: 300px;
     margin-bottom: 3em;
 }
 @media screen and (max-width: 600px) {
