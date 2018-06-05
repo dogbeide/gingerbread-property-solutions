@@ -39,8 +39,14 @@ app.use('/portfolio', portfolio);
 app.get('/privacy-policy', (req, res) => {
     res.render('privacy-policy', {
         title: `${company} | Privacy Policy`
-    })
+    });
 });
+app.get('/reviews', (req, res) => {
+    res.render('reviews', {
+        title: `${company} | Reviews`
+    });
+});
+
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);
 })

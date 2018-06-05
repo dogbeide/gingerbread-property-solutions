@@ -1,0 +1,33 @@
+extends ./layouts/base.pug
+include ./includes/_review.pug
+
+block content
+    .content
+        .container
+            .subtitle-3.bg-grad-blue-2.center
+                span SATISFIED CUSTOMERS
+            .bg-white-smoke.center
+                +review(
+                    'DELLA',
+                    '“Gingerbread Property Solutions Limited came to the rescue for us when our son who has a severe learning disability cut the electric cables through the lower floor of our home. Repairs were done hassle-free and with a quick response so that we got things like the burglar alarms up and running again.”'
+                )
+                +review(
+                    'ADRIAN',
+                    '“We needed to get our kitchen re-done so got Gingerbread Property Solutions Limited to have a look and get us a decorator and a quote. Went over time about a week but made big difference to our mum because she loves the new look now the old council colours are gone.  They got rid of the annoying Artex on the ceiling too which was great.”'
+                )
+                +review(
+                    'HAMZAH',
+                    '“I put a shout-out among friends for a painter really urgently and was given a contact who is part of Gingerbread Property Solutions Limited’s team.  Their guys are quick and reliable and it makes a change to actually not get ripped off.  I like their style.”'
+                )
+                +review(
+                    'HELEN',
+                    '“With my 3-bedroom flat, I ended up having to rent it out quick so I could get a guaranteed rent and look for a new place to live. Gingerbread Property Solutions Limited helped me with getting to know my rights and responsibilities”'
+                )
+                +review(
+                    'MURRAY',
+                    '“They’ve given me food for thought on what investment options there are in the property market.  Lots to offer and lots of potential.”'
+                )
+                .text-2
+            hr.fancy-hr.opacity-6
+            // TODO: Commenting ability
+            // TODO: Database for comments
