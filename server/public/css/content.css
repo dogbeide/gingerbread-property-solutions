@@ -1,11 +1,10 @@
 .content {
-    background-image: url("/images/content-bg-full.png");
+    background-image: url("/images/backgrounds/content-bg-full.png");
     background-size: cover;
     height: 100%;
 }
 
 .container {
-    /* background-color: var(--white-smoke); */
     display: flex;
     flex-direction: column;
     padding: 0;

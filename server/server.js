@@ -5,9 +5,6 @@ import logger from 'morgan';
 import pug from 'pug';
 
 import contact from './routes/contact';
-import portfolio from './routes/portfolio';
-import services from './routes/services';
-// import fooMiddleware from './utils/foo';
 import { company } from './utils/constants'
 
 const port = process.env.PORT || 3000;
@@ -21,7 +18,7 @@ app.set('view engine', 'pug'); // sets the view engine to pug
 app.use(express.static(__dirname + '/public')); // serve static content
 app.use(express.static(__dirname + '/media')); // serve images
 
-app.use(logger('dev')); // log all http requests
+app.use(logger('dev')); // log all http requests to console
 
 app.get('/', (req, res) => {
     res.render('index', {
@@ -34,7 +31,11 @@ app.get('/about', (req, res) => {
     });
 });
 app.use('/contact', contact);
-app.use('/services', services);
+app.get('/services', (req, res) => {
+    res.render('services', {
+        title: `${company} | Services`
+    })
+});
 app.get('/privacy-policy', (req, res) => {
     res.render('privacy-policy', {
         title: `${company} | Privacy Policy`
