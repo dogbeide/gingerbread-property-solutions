@@ -1,0 +1,43 @@
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.contact-field {
+    display: block;
+}
+
+.social-group {
+    margin-top: 1em;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.social-icon {
+    display: block;
+    margin-right: 5px;
+}
+
+.social-text {
+    display: block;
+    font-size: 1.25em;
+}
+
+
+@media screen and (max-width: 600px) {
+    .social-text {
+        font-size: 0.9em;
+    }
+    .social-icon {
+        width: 24px;
+        height: 24px;
+    }
+}

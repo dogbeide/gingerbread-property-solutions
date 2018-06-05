@@ -3,6 +3,7 @@ import path from 'path';
 import express from 'express';
 import logger from 'morgan';
 import pug from 'pug';
+import bodyParser from 'body-parser'
 
 import contact from './routes/contact';
 import { company } from './utils/constants'
@@ -19,6 +20,7 @@ app.use(express.static(__dirname + '/public')); // serve static content
 app.use(express.static(__dirname + '/media')); // serve images
 
 app.use(logger('dev')); // log all http requests to console
+app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', (req, res) => {
     res.render('index', {

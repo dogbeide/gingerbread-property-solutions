@@ -1,0 +1,12 @@
+form.contact-form(action="/contact" method="post")
+    p.contact-field
+        input(type="text" name="name" placeholder="Name")
+    p.contact-field
+        input(type="text" name="phone" placeholder="Phone")
+    p.contact-field
+        input(type="email" name="email" placeholder="Email")
+    p.contact-field
+        textarea(name="message", cols="30", rows="5" placeholder="Message")
+    button.contact-submit Submit
+// TODO: integrate into contact page
+// TODO: Add captcha verification 
