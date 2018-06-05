@@ -1,1 +1,39 @@
 extends ./layouts/base.pug
+
+block content
+    .content
+        .container
+            .subtitle-3.bg-grad-blue.center
+                span WHAT WE OFFER
+            .bg-white-smoke.justify-content-center
+                .text-2
+                #rentals.service-item
+                    img.p-4.service-img(src="/images/rentals.jpg")
+                    .service-text
+                        .service-title RENTALS
+                        .service-description.left.
+                            • Landlords get guaranteed rent for an agreed 
+                            term e.g.  2 - 7 years, so they do not have 
+                            to worry about voids.
+                        .service-description.left.
+                            • You will get your monthly fees.
+                        .service-description.left.
+                            • Landlords get their full monthly rent.
+                #maintenance.service-item
+                    img.p-4.service-img(src="/images/maintenance.jpg")
+                    .service-text
+                        .service-title MAINTENANCE
+                        .service-description.left.
+                            • We cover all the maintenance on the property 
+                            (excluding structural issues).
+                        .service-description.left.
+                            • We conduct weekly house inspections and comply with 
+                            Council’s HMO rules and regulations.
+                #architecture.service-item
+                    img.p-4.service-img(src="/images/architecture.jpg")
+                    .service-text
+                        .service-title ARCHITECTURE
+                        .service-description.left.
+                             • We normally decorate and furnish properties 
+                             at our own cost (with landlord's permission).
+ 
