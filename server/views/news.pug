@@ -1,0 +1,12 @@
+extends ./layouts/base.pug
+include ./includes/_doc-dl.pug
+
+block content
+    .content
+        .container
+            .subtitle-3.bg-grad-blue.center
+                span RESOURCES
+            .bg-white-smoke.center
+                .text-2
+                +doc-dl('spotlight-prime-residential-rents-july-2017.pdf')
+                hr.fancy-hr.opacity-6

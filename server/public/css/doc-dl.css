@@ -1,0 +1,13 @@
+
+.doc-dl {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+.doc-dl__name {
+    display: block;
+    font-size: 1.25em;
+    margin-left: 5px;
+}

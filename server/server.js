@@ -45,6 +45,11 @@ app.get('/reviews', (req, res) => {
         title: `${company} | Reviews`
     });
 });
+app.get('/news', (req, res) => {
+    res.render('news', {
+        title: `${company} | News`
+    })
+})
 
 app.listen(port, () => {
     console.log(`Server listening on port ${port}`);

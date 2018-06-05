@@ -1,0 +1,11 @@
+mixin doc-dl(file)
+    a.doc-dl(
+        href=`/docs/${file}`,
+        download
+    )
+        img(
+            src="/images/doc-dl.png"
+            height="32px"
+            width="32px"
+        )
+        .doc-dl__name #{file}
